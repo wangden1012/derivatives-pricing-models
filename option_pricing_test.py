@@ -19,16 +19,6 @@ BSM = BlackScholesModel(100, 100, 365, 0.1, 0.2)
 print(BSM.calculate_option_price('Call Option'))
 print(BSM.calculate_option_price('Put Option'))
 
-# Binomial model testing
-BOPM = BinomialTreeModel(100, 100, 365, 0.1, 0.2, 15000)
-print(BOPM.calculate_option_price('Call Option'))
-print(BOPM.calculate_option_price('Put Option'))
 
-# Monte Carlo simulation testing
-MC = MonteCarloPricing(100, 100, 365, 0.1, 0.2, 10000)
-MC.simulate_prices()
-print(MC.calculate_option_price('Call Option'))
-print(MC.calculate_option_price('Put Option'))
-MC.plot_simulation_results(20)
 
 
