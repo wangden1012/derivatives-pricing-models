@@ -2,8 +2,6 @@
 Script testing functionalities of option_pricing package:
 - Testing stock data fetching from Yahoo Finance using pandas-datareader
 - Testing Black-Scholes option pricing model   
-- Testing Binomial option pricing model   
-- Testing Monte Carlo Simulation for option pricing   
 """
 
 from option_pricing import BlackScholesModel, MonteCarloPricing, BinomialTreeModel, Ticker
